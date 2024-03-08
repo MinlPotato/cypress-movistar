@@ -10,6 +10,10 @@ class ProductPage {
         return cy.get('.price-content > .financing')    
     }
 
+    Buy() {
+        return cy.get('#swatch_attribute_card').should('not.be.disabled').click()
+    }
+
     checkCardCuotas(bank: string, card: string) {
         cy.get('#open-installments-modal').click()
         cy.get('#bankCardSelector').as('bankCardForm')
