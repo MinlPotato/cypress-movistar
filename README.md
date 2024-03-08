@@ -14,6 +14,7 @@
   <li>De no estar disponible el equipo A14 tomar alguno que si lo esté.</li>
 </ol>
 
+<br/>
 
 <h3>CP002 - Aplicar filtro de equipos - Memoria Interna.128GB -Precio Entre 200Ky300K</h3>
 <p>
@@ -26,7 +27,7 @@
   <li>Que se obtengan equipos luego del filtrado validando la cantidad mostrada</li>
 </ol>
 
-
+<br/>
 
 <h3>CP003 - Validar cuotas en compra de equipo -Cuotas.60 -Equipo.Tercero de la lista -Banco.Credicoop -Tarjeta.Visa </h3>
 <p>
@@ -39,7 +40,7 @@
   <li>Que no exista un medio de pago con 60 cuotas para el banco Credicoop con tarjeta VISA</li>
 </ol>
 
-
+<br/>
 
 <h3>CP004 – Comprobar el correcto funcionamiento del Carrito de compras</h3>
 <p>
