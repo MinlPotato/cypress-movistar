@@ -15,8 +15,10 @@ describe('movistar casos de prueba', () => {
 
         homePage.getProductList().contains('A14').as('product')
         cy.get('@product').click()
-        productPage.Disponibility().should('contain.text', '*Sujeto a disponiblidad').screenshot()
-        productPage.Cuotas().should('contain.text', '3 cuotas sin interés').screenshot()
+        productPage.Disponibility().screenshot()
+        productPage.Disponibility().should('contain.text', '*Sujeto a disponiblidad')
+        productPage.Cuotas().screenshot()
+        productPage.Cuotas().should('contain.text', '3 cuotas sin interés')
     });
 
 
@@ -40,7 +42,7 @@ describe('movistar casos de prueba', () => {
         const productPage   = new ProductPage()
 
         homePage.getProductList().eq(2).click()
-        productPage.checkCardCuotas('Credicoop', 'Visa').should('not.contain', '60 cuotas').screenshot()
+        productPage.checkCardCuotas('Credicoop', 'Visa').screenshot().should('not.contain', '60 cuotas')
     });
 
     it('CP004 - Comprobar el correcto funcionamiento del Carrito de compras', () => {
@@ -49,8 +51,9 @@ describe('movistar casos de prueba', () => {
         const carritoPage   = new CarritoPage()
 
         homePage.getProductList().eq(0).as('product')
-        cy.get('@product').click()
         cy.get('@product').screenshot()
+        cy.get('@product').click()
+        
         productPage.Buy()
         carritoPage.getProductsInCart().as('cart')
         cy.get('@cart').should('be.visible')

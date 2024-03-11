@@ -6,13 +6,16 @@
 <p>Descripción: El objetivo del caso de prueba es visitar la tienda de Movistar (https://tiendaonline.movistar.com.ar), 
     luego realizar la búsqueda del equipo A14 e ingresar al mismo y verificar que se pueda pagar en 3 cuotas sin interes
 </p>
-<p>Resultado Esperado</p>
+<p>Resultado Esperado:</p>
 <ol>
   <li>Que se pueda ingresar a la página indicada</li>
   <li>Que el equipo seleccionado sea el A14</li>
   <li>Que se indique en el equipo que puede ser pagado en 3 cuotas sin interes</li>
   <li>De no estar disponible el equipo A14 tomar alguno que si lo esté.</li>
 </ol>
+
+<p>Resultado Obtenido:</p>
+<p>En la pagina del Equipo A14 no se indica que se pueda pagar en 3 cuotas sin intereses, lo que se indica es: 6 cuotas sin intereses.</p>
 
 <br/>
 
